@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>testLab</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
 </head>
 <body>
 <header>
@@ -14,10 +15,10 @@
             </a>
             <ul class="nav__list">
                 <li class="nav__list__item">
-                    <a href="#" class="nav__list__iem-link">Как это работает</a>
+                    <a href="#faq" class="nav__list__iem-link">Как это работает</a>
                 </li>
                 <li class="nav__list__item">
-                    <a href="#" class="nav__list__iem-link">3-й блок</a>
+                    <a href="#third" class="nav__list__iem-link">3-й блок</a>
                 </li>
                 <li class="nav__list__item">
                     <a href="#" class="nav__list__iem-link">Вопросы и ответы</a>
@@ -38,6 +39,53 @@
         </div>
     </div>
 </header>
+<main>
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq__content">
+                <h2 class="faq__content-heading heading">Как это работает</h2>
+                <ul class="faq__list">
+                    <li class="faq__list__item">
+                        <img class="faq__list__item-img" src="./images/faq/faq-1.png" alt="faq img 1">
+                        <h6 class="faq__list__item-heading">Прочитай задание внимательно</h6>
+                        <div class="faq__list__item-body">Думаю у тебя не займет это больше двух-трех минут</div>
+                    </li>
+                    <li class="faq__list__item">
+                        <img class="faq__list__item-img" src="./images/faq/faq-2.png" alt="faq img 2">
+                        <h6 class="faq__list__item-heading">Прочитай задание внимательно</h6>
+                        <div class="faq__list__item-body">Думаю у тебя не займет это больше двух-трех минут</div>
+                    </li>
+                    <li class="faq__list__item">
+                        <img class="faq__list__item-img" src="./images/faq/faq-3.png" alt="faq img 3">
+                        <h6 class="faq__list__item-heading">Прочитай задание внимательно</h6>
+                        <div class="faq__list__item-body">Думаю у тебя не займет это больше двух-трех минут</div>
+                    </li>
+                    <li class="faq__list__item">
+                        <img class="faq__list__item-img" src="./images/faq/faq-4.png" alt="faq img 4">
+                        <h6 class="faq__list__item-heading">Прочитай задание внимательно</h6>
+                        <div class="faq__list__item-body">Думаю у тебя не займет это больше двух-трех минут</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="third" id="third">
+        <div class="container">
+            <div class="third__content">
+                <div class="third__content__text">
+                    <h2 class="third__content__text-heading">Круто, ты дошел до третьего блока</h2>
+                    <p class="third__content__text-paragraph third__content__text-paragraph-top">
+                        63% опрошенных пользовались кредитами из-за того, что не могли покрыть непредвиденные расходы свыше 15 000 ₽.
+                    </p>
+                    <p class="third__content__text-paragraph third__content__text-paragraph-bottom">
+                        Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах.
+                    </p>
+                </div>
+                <img class="third__content-img" src="./images/third/third.png" alt="third img">
+            </div>
+        </div>
+    </section>
+</main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>

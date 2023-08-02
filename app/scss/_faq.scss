@@ -1,0 +1,28 @@
+.faq {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.4vw 0;
+  }
+  &__list {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list__item {
+    width: 280px;
+  }
+  &__list__item-heading {
+    margin-top: 16px;
+    color: $text-dark;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  &__list__item-body {
+    color: $text-gray;
+    font-size: 0.875em;
+    line-height: 24px;
+  }
+}

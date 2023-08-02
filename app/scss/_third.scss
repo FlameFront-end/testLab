@@ -1,0 +1,25 @@
+.third {
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5.4vw;
+  }
+  &__content__text-heading {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  &__content-img {
+    max-width: 592px;
+  }
+  &__content__text-paragraph {
+    font-size: 1em;
+    line-height: 28px;
+    &-top {
+      padding-top: 16px;
+      padding-bottom: 40px;
+    }
+  }
+}
