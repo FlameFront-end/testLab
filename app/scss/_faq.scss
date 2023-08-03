@@ -2,6 +2,9 @@
   .container {
     max-width: 1048px;
   }
+  &__list {
+    padding-bottom: 3.6vw;
+  }
   &__item {
     padding-bottom: 24px;
     border-top: 1px solid #ECEFF2;

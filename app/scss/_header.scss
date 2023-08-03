@@ -65,4 +65,10 @@ header {
       }
     }
   }
+  @media (max-width: 610px) {
+    .nav__list {
+      display: none;
+    }
+  }
 }
+

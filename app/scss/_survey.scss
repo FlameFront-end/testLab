@@ -1,0 +1,41 @@
+.survey {
+  background-color: #F6F8FA;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+    column-gap: 10px;
+    padding: 4.5vw 0;
+  }
+  &__item {
+    flex: 0 0 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+  &__item-heading {
+    padding-bottom: 17px;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  &__item-paragraph {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  @media (max-width: 900px) {
+    &__content {
+      row-gap: 20px;
+    }
+    &__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    &__item-heading {
+      padding-bottom: 46px;
+    }
+  }
+}
+
+
