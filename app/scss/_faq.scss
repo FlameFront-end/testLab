@@ -1,28 +1,54 @@
 .faq {
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5.4vw 0;
+  .container {
+    max-width: 1048px;
   }
-  &__list {
-    margin-top: 4vw;
+  &__item {
+    padding-bottom: 24px;
+    border-top: 1px solid #ECEFF2;
+  }
+  &__item__question {
     display: flex;
     justify-content: space-between;
-  }
-  &__list__item {
-    width: 280px;
-  }
-  &__list__item-heading {
-    margin-top: 16px;
-    color: $text-dark;
-    font-size: 1em;
+    cursor: pointer;
+    padding-top: 24px;
+    font-size: 1.125em;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 32px;
+    transition: all .5s ease;
+    svg {
+      min-width: 24px;
+      min-height: 24px;
+      transition: transform .5s ease;
+      path, circle {
+        transition: all .5s ease;
+      }
+    }
+    &:hover {
+      color: #2A6CEA;
+      svg {
+        path {
+          fill: #2A6CEA;
+        }
+        circle {
+          stroke: #2A6CEA;
+        }
+      }
+    }
   }
-  &__list__item-body {
+  &__item__answer {
+    padding-top: 24px;
+    max-height: 0;
+    max-width: 936px;
+    overflow: hidden;
+    font-size: 1.125em;
+    line-height: 32px;
     color: $text-gray;
-    font-size: 0.875em;
-    line-height: 24px;
+  }
+  &__item__answer.active {
+    transition: max-height 2s ease;
+    max-height: 1000px;
+  }
+  svg.active {
+    transform: rotate(45deg);
   }
 }

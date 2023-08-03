@@ -1,0 +1,68 @@
+.reviews {
+  background-color: #F6F8FA;
+  margin-bottom: 100px;
+  &-heading {
+    padding-top: 3.8vw;
+    padding-bottom: 2.15vw;
+  }
+  .swiper-content {
+    position: relative;
+  }
+  .swiper-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1087px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    justify-content: center;
+  }
+  .swiper-slide {
+    width: 341px !important;
+    height: 316px;
+    padding: 22px 22px 0;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.10);
+    &__top {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    &__top__text-name {
+      color: $text-dark;
+      font-size: 1em;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    &__top__text-city {
+      color: $text-gray;
+      font-size: 0.75em;
+      line-height: 16px;
+    }
+    &-paragraph {
+      color: $text-dark;
+      font-size: 0.875em;
+      line-height: 24px;
+    }
+  }
+  .swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: inline;
+    top: 40%;
+    margin-top: 0;
+    &:after {
+      content: none;
+    }
+  }
+  .swiper-pagination {
+    position: static;
+    margin-top: 50px;
+    padding-bottom: 45px;
+  }
+}

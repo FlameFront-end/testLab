@@ -5,6 +5,10 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 5.4vw;
+    gap: 20px;
+  }
+  &__content__text {
+    width: 50%;
   }
   &__content__text-heading {
     font-size: 2em;
@@ -12,6 +16,7 @@
     line-height: 40px;
   }
   &__content-img {
+    width: 50%;
     max-width: 592px;
   }
   &__content__text-paragraph {
@@ -22,4 +27,18 @@
       padding-bottom: 40px;
     }
   }
+  @media (max-width: 650px) {
+    &__content {
+      flex-direction: column-reverse;
+      gap: 7px;
+    }
+    &__content__text {
+      width: 100%;
+      text-align: center;
+    }
+    &__content-img {
+      width: 100%;
+    }
+  }
 }
+
