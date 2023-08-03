@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="ru"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>testLab</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <body>
 <header>
@@ -14,10 +16,10 @@
             </a>
             <ul class="nav__list">
                 <li class="nav__list__item">
-                    <a href="#" class="nav__list__iem-link">Как это работает</a>
+                    <a href="#how" class="nav__list__iem-link">Как это работает</a>
                 </li>
                 <li class="nav__list__item">
-                    <a href="#" class="nav__list__iem-link">3-й блок</a>
+                    <a href="#third" class="nav__list__iem-link">3-й блок</a>
                 </li>
                 <li class="nav__list__item">
                     <a href="#" class="nav__list__iem-link">Вопросы и ответы</a>
@@ -38,6 +40,257 @@
         </div>
     </div>
 </header>
+<main>
+    <section class="how" id="how">
+        <div class="container">
+            <div class="how__content">
+                <h2 class="how-heading heading">Как это работает</h2>
+                <ul class="how__list">
+                    <li class="how__list__item">
+                        <img class="how__list__item-img" src="./images/how/how-1.png" alt="how img 1">
+                        <div class="how__list__item__text">
+                            <h6 class="how__list__item__text-heading">Прочитай задание внимательно</h6>
+                            <div class="how__list__item__text-body">Думаю у тебя не займет это больше двух-трех минут</div>
+                        </div>
+                    </li>
+                    <li class="how__list__item">
+                        <img class="how__list__item-img" src="./images/how/how-2.png" alt="how img 2">
+                        <div class="how__list__item__text">
+                            <h6 class="how__list__item__text-heading">Изучи весь макет заранее</h6>
+                            <div class="how__list__item__text-body">Подумай как это будет работать на разных разрешениях и при скролле</div>
+                        </div>
+                    </li>
+                    <li class="how__list__item">
+                        <img class="how__list__item-img" src="images/how/how-3.png" alt="faq img 3">
+                        <div class="how__list__item__text">
+                            <h6 class="how__list__item__text-heading">Сделай хорошо</h6>
+                            <div class="how__list__item__text-body">Чтобы мы могли тебе доверить подобные задачи в будущем</div>
+                        </div>
+                    </li>
+                    <li class="how__list__item">
+                        <img class="how__list__item-img" src="./images/how/how-4.png" alt="how img 4">
+                        <div class="how__list__item__text">
+                            <h6 class="how__list__item__text-heading">Получи предложение</h6>
+                            <div class="how__list__item__text-body">Ну тут все просто, не я придумал правила, но думаю так и будет)))</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="third" id="third">
+        <div class="container">
+            <div class="third__content">
+                <div class="third__content__text">
+                    <h2 class="third__content__text-heading">Круто, ты дошел до третьего блока</h2>
+                    <p class="third__content__text-paragraph third__content__text-paragraph-top">
+                        63% опрошенных пользовались кредитами из-за того, что не могли покрыть непредвиденные расходы свыше 15 000 ₽.
+                    </p>
+                    <p class="third__content__text-paragraph third__content__text-paragraph-bottom">
+                        Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах.
+                    </p>
+                </div>
+                <img class="third__content-img" src="./images/third/third.png" alt="third img">
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__content">
+                <h2 class="reviews-heading heading">
+                    Отзывы
+                </h2>
+                <div class="swiper-content">
+                    <button class="swiper-button-prev">prev</button>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__top">
+                                    <img src="./images/reviews/ava-1.png" alt="avatar 1">
+                                    <div class="swiper-slide__top__text">
+                                        <h3 class="swiper-slide__top__text-name">Константинов Михаил Павлович</h3>
+                                        <span class="swiper-slide__top__text-city">Санкт-Петербург</span>
+                                    </div>
+                                </div>
+                                <p class="swiper-slide-paragraph">
+                                    Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для
+                                    анализа существующих паттернов
+                                    поведения. В своём стремлении улучшить
+                                    пользовательский опыт мы
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__top">
+                                    <img src="./images/reviews/ava-2.png" alt="avatar 2">
+                                    <div class="swiper-slide__top__text">
+                                        <h3 class="swiper-slide__top__text-name">Иван Иванов</h3>
+                                        <span class="swiper-slide__top__text-city">Санкт-Петербург</span>
+                                    </div>
+                                </div>
+                                <p class="swiper-slide-paragraph">
+                                    Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для
+                                    анализа существующих паттернов
+                                    поведения. В своём стремлении улучшить
+                                    пользовательский опыт мы упускаем, что
+                                    активно развивающиеся страны третьего
+                                    мира призваны к ответу.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__top">
+                                    <img src="./images/reviews/ava-3.png" alt="avatar 3">
+                                    <div class="swiper-slide__top__text">
+                                        <h3 class="swiper-slide__top__text-name">Артем Корнилов</h3>
+                                        <span class="swiper-slide__top__text-city">Артем Корнилов</span>
+                                    </div>
+                                </div>
+                                <p class="swiper-slide-paragraph">
+                                    Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для
+                                    анализа существующих паттернов
+                                    поведения.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="swiper-button-next">next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <ul class="faq__list">
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(1)">
+                        <h3>Подтверждено: сознание наших соотечественников не замутнено пропагандой?</h3>
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg1">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer1">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(2)">
+                        <h3>Прототип нового сервиса - это как трубный призыв?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg2">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer2">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(3)">
+                        <h3>Частокол на границе продолжает удивлять?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg3">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer3">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(4)">
+                        <h3>Очевидцы сообщают, что слышали грохот грома градущих изменений?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg4">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer4">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(5)">
+                        <h3>И по сей день в центральных регионах звучит перекатами печальный плач оппозиции?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg5">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer5">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(6)">
+                        <h3>Нынче никто не может себе позволить инициировать треск разлетающихся скреп?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg6">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer6">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__item__question" onclick="toggleAnswer(7)">
+                        <h3>Высококачественный прототип будущего проекта обнадёживает?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="svg7">
+                            <path d="M17 11H13V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H11V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4804 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8946 17.5196 13 17.2652 13 17V13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#191C1F"/>
+                            <circle cx="12" cy="12" r="11" stroke="#191C1F" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="faq__item__answer" id="answer7">
+                        <p>
+                            В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания
+                            по разработке дальнейших направлений развития. Предварительные выводы неутешительны:
+                            экономическая повестка сегодняшнего дня говорит о возможностях существующих финансовых и
+                            административных условий.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+         </div>
+    </section>
+</main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
