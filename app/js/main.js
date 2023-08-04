@@ -2,8 +2,9 @@ const overlay = document.querySelector(".overlay");
 const burgerLogo = document.querySelector(".burger-logo");
 const burgerMenu = document.querySelector(".burger-menu");
 const closeBurger = document.querySelector(".burger-menu__btn");
-const checkbox = document.querySelector("#checkbox");
 const btnSubmit = document.querySelector(".form__button");
+const form = document.querySelector("#form");
+const checkbox = document.querySelector("#checkbox");
 
 $(".responsive").slick({
   dots: true,
@@ -75,3 +76,31 @@ checkbox.addEventListener("change", () => {
     ? btnSubmit.setAttribute("disabled", true)
     : btnSubmit.removeAttribute("disabled");
 });
+
+const submitForm = async (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const name = formData.get("name");
+  const tel = formData.get("tel");
+
+  try {
+    const response = await fetch("https://demo9652966.mockable.io", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `name=${encodeURIComponent(name)}&tel=${encodeURIComponent(tel)}`,
+    });
+
+    if (response.ok) {
+      alert("Форма успешно отправлена!");
+    } else {
+      alert("There was an error submitting the form.");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("There was an error submitting the form.");
+  }
+};
+
+form.addEventListener("submit", submitForm);
