@@ -5,40 +5,34 @@ const closeBurger = document.querySelector(".burger-menu__btn");
 const checkbox = document.querySelector("#checkbox");
 const btnSubmit = document.querySelector(".form__button");
 
-const swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3,
-  spaceBetween: 32,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    767: {
-      centeredSlides: true,
-      slidesPerView: 1,
-      spaceBetween: 10,
+$(".responsive").slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  prevArrow: $(".slick-prev"),
+  nextArrow: $(".slick-next"),
+  responsive: [
+    {
+      breakpoint: 920,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
     },
-  },
+  ],
 });
 
 const toggleOverlay = () => {
   overlay.classList.toggle("active");
-};
-
-const showOverlay = () => {
-  overlay.classList.add("active");
-};
-
-const hideOverlay = () => {
-  overlay.classList.remove("active");
 };
 
 const toggleBurgerMenu = () => {
@@ -54,14 +48,17 @@ const handleBurgerLogoClick = () => {
   toggleBurgerMenu();
 };
 
+const handleBurgerMenuItemClick = () => {
+  toggleBurgerMenu();
+};
+
+const burgerMenuItems = document.querySelectorAll(".burger-menu__list-item");
+burgerMenuItems.forEach((item) => {
+  item.addEventListener("click", handleBurgerMenuItemClick);
+});
+
 burgerLogo.addEventListener("click", handleBurgerLogoClick);
 closeBurger.addEventListener("click", toggleBurgerMenu);
-
-burgerMenu.addEventListener("click", (event) => {
-  if (event.target.matches(".burger-menu__list-item-link")) {
-    toggleBurgerMenu();
-  }
-});
 
 function toggleAnswer(id) {
   const answer = document.getElementById("answer" + id);

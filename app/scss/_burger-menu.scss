@@ -6,6 +6,11 @@
   &.active {
     transform: rotate(90deg);
   }
+  @media (max-width: 610px) {
+    &{
+      display: flex;
+    }
+  }
 }
 
 .burger-menu {
@@ -28,7 +33,7 @@
     padding: 0 16px;
     height: 100%;
   }
-  &__list-item {
+  &__list-item-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,9 +41,9 @@
     border-top: 1px solid #ECEFF2;
     font-size: 18px;
     line-height: 32px;
-    &:last-child {
-      border-bottom: 1px solid #ECEFF2;
-    }
+  }
+  &__list-item:last-child {
+    border-bottom: 1px solid #ECEFF2;
   }
 }
 
@@ -62,8 +67,3 @@
   }
 }
 
-@media (max-width: 610px) {
-  .burger-logo {
-    display: flex;
-  }
-}

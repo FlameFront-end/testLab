@@ -5,24 +5,15 @@
     padding-top: 3.8vw;
     padding-bottom: 2.15vw;
   }
-  .swiper-content {
+  &__slider {
     position: relative;
   }
-  .swiper-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1087px;
-    margin: 0 auto;
-    overflow: hidden;
+  .carousel-container {
   }
-  .swiper-wrapper {
-    justify-content: center;
-  }
-  .swiper-slide {
-    width: 341px !important;
-    height: 316px;
+  .slide {
+    width: 341px;
+    min-height: 316px;
+    margin: 16px;
     padding: 22px 22px 0;
     border-radius: 8px;
     background-color: #FFFFFF;
@@ -49,20 +40,44 @@
       line-height: 24px;
     }
   }
-  .swiper-button-prev, .swiper-button-next {
+  .slick-btn {
     position: absolute;
-    width: auto;
-    height: auto;
-    display: inline;
-    top: 40%;
-    margin-top: 0;
-    &:after {
-      content: none;
+    top: 33%;
+    @media (max-width: 940px) {
+      &{
+        display: none !important;
+      }
     }
   }
-  .swiper-pagination {
-    position: static;
-    margin-top: 50px;
-    padding-bottom: 45px;
+  .slick-next {
+    right: -3.3vw;
+    margin-right: 10px;
+  }
+  .slick-prev {
+    left: -3.3vw;
+    margin-left: 10px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 3.3vw;
+    padding-bottom: 3vw;
+  }
+  .slick-dots li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C2C8CD;
+    cursor: pointer;
+    button {
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+
+  .slick-dots li.slick-active {
+    background-color: #2A6CEA;
   }
 }

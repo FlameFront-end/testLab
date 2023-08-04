@@ -56,11 +56,13 @@ header {
     }
     &-btn {
       padding: 20px 40px;
+      border-radius: 4px;
       background-color: #ECEFF2;
       color: $text-dark;
       transition: all .5s ease-in-out;
+      border: 1px solid transparent;
       &:hover {
-        transform: scale(1.1);
+        border: 1px solid #C2C8CD;
         background-color: #FFFFFF;
       }
     }
