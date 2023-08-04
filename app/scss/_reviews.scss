@@ -13,6 +13,9 @@
     justify-content: space-between;
     gap: 2.14vw;
   }
+  .slick-list {
+    padding-bottom: 3.3vw;
+  }
   .slide {
     width: 341px;
     min-height: 316px;
@@ -65,7 +68,6 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 3.3vw;
     padding-bottom: 3vw;
   }
   .slick-dots li {

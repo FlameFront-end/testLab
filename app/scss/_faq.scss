@@ -47,6 +47,11 @@
     font-size: 1.125em;
     line-height: 32px;
     color: $text-gray;
+    @media (max-width: 500px) {
+      &{
+        font-size: 16px;
+      }
+    }
   }
   &__item__answer.active {
     transition: max-height 2s ease;

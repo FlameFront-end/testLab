@@ -44,15 +44,31 @@ header {
     text-align: center;
     padding-bottom: 20.9vw;
     &-heading {
-      font-size: 3.25em;
+      font-size: 52px;
       font-weight: 600;
       line-height: 64px;
       padding-bottom: 1.2vw;
+      @media (max-width: 800px) {
+        &{
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      @media (max-width: 500px) {
+        &{
+          font-size: 24px;
+        }
+      }
     }
     &-subheading {
       font-size: 1.125em;
       line-height: 32px;
       padding-bottom: 6vw;
+      @media (max-width: 800px) {
+        &{
+          font-size: 16px;
+        }
+      }
     }
     &-btn {
       padding: 20px 40px;
