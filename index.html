@@ -5,7 +5,7 @@
     <title>testLab</title>
     <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
 <div class="burger-menu">
@@ -18,22 +18,28 @@
         </div>
         <ul class="burger-menu__list">
             <li class="burger-menu__list-item">
-                <a class="burger-menu__list-item-link" href="#how">Как это работает</a>
-                <img src="./images/burger-menu/arrow.svg" alt="arrow">
+                <a class="burger-menu__list-item-link" href="#how">
+                    Как это работает
+                    <img src="./images/burger-menu/arrow.svg" alt="arrow">
+                </a>
             </li>
             <li class="burger-menu__list-item">
-                <a class="burger-menu__list-item-link" href="#third">3-й блок</a>
-                <img src="./images/burger-menu/arrow.svg" alt="arrow">
+                <a class="burger-menu__list-item-link" href="#third">
+                    3-й блок
+                    <img src="./images/burger-menu/arrow.svg" alt="arrow">
+                </a>
             </li>
             <li class="burger-menu__list-item">
-                <a class="burger-menu__list-item-link" href="#faq">Вопросы и ответы</a>
-                <img src="./images/burger-menu/arrow.svg" alt="arrow">
-
+                <a class="burger-menu__list-item-link" href="#faq">
+                    Вопросы и ответы
+                    <img src="./images/burger-menu/arrow.svg" alt="arrow">
+                </a>
             </li>
             <li class="burger-menu__list-item">
-                <a class="burger-menu__list-item-link" href="#form">Форма</a>
-                <img src="./images/burger-menu/arrow.svg" alt="arrow">
-
+                <a class="burger-menu__list-item-link" href="#form">
+                    Форма
+                    <img src="./images/burger-menu/arrow.svg" alt="arrow">
+                </a>
             </li>
         </ul>
     </div>
@@ -136,66 +142,227 @@
                 <h2 class="reviews-heading heading">
                     Отзывы
                 </h2>
-                <div class="swiper-content">
-                    <button class="swiper-button-prev">prev</button>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper-slide__top">
-                                    <img src="./images/reviews/ava-1.png" alt="avatar 1">
-                                    <div class="swiper-slide__top__text">
-                                        <h3 class="swiper-slide__top__text-name">Константинов Михаил Павлович</h3>
-                                        <span class="swiper-slide__top__text-city">Санкт-Петербург</span>
-                                    </div>
+                <div class="reviews__slider">
+                    <button class="slick-prev slick-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M23.8387 2.27597C24.0816 2.0245 24.216 1.6877 24.2129 1.3381C24.2099 0.988509 24.0697 0.654093 23.8225 0.406882C23.5753 0.159671 23.2408 0.0194457 22.8912 0.0164078C22.5417 0.0133699 22.2049 0.147762 21.9534 0.39064L11.0574 11.2866C9.80757 12.5368 9.10547 14.2322 9.10547 16C9.10547 17.7677 9.80757 19.4631 11.0574 20.7133L21.9534 31.6093C22.2049 31.8522 22.5417 31.9866 22.8912 31.9835C23.2408 31.9805 23.5753 31.8403 23.8225 31.5931C24.0697 31.3459 24.2099 31.0114 24.2129 30.6618C24.216 30.3122 24.0816 29.9754 23.8387 29.724L12.9427 18.828C12.1928 18.0779 11.7716 17.0606 11.7716 16C11.7716 14.9393 12.1928 13.9221 12.9427 13.172L23.8387 2.27597Z" fill="#2A6CEA"/>
+                        </svg>
+                    </button>
+                    <div class="responsive">
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-1.png" alt="avatar 1">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Константинов Михаил Павлович</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
                                 </div>
-                                <p class="swiper-slide-paragraph">
-                                    Каждый из нас понимает очевидную вещь:
-                                    перспективное планирование
-                                    предоставляет широкие возможности для
-                                    анализа существующих паттернов
-                                    поведения. В своём стремлении улучшить
-                                    пользовательский опыт мы
-                                </p>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-slide__top">
-                                    <img src="./images/reviews/ava-2.png" alt="avatar 2">
-                                    <div class="swiper-slide__top__text">
-                                        <h3 class="swiper-slide__top__text-name">Иван Иванов</h3>
-                                        <span class="swiper-slide__top__text-city">Санкт-Петербург</span>
-                                    </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-2.png" alt="avatar 2">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Иван Иванов</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
                                 </div>
-                                <p class="swiper-slide-paragraph">
-                                    Каждый из нас понимает очевидную вещь:
-                                    перспективное планирование
-                                    предоставляет широкие возможности для
-                                    анализа существующих паттернов
-                                    поведения. В своём стремлении улучшить
-                                    пользовательский опыт мы упускаем, что
-                                    активно развивающиеся страны третьего
-                                    мира призваны к ответу.
-                                </p>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-slide__top">
-                                    <img src="./images/reviews/ava-3.png" alt="avatar 3">
-                                    <div class="swiper-slide__top__text">
-                                        <h3 class="swiper-slide__top__text-name">Артем Корнилов</h3>
-                                        <span class="swiper-slide__top__text-city">Артем Корнилов</span>
-                                    </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы упускаем, что
+                                активно развивающиеся страны третьего
+                                мира призваны к ответу.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-3.png" alt="avatar 3">
+                                <div class="slide__top__text">
+                                    <h3 class="-slide__top__text-name">Артем Корнилов</h3>
+                                    <span class="slide__top__text-city">Артем Корнилов</span>
                                 </div>
-                                <p class="swiper-slide-paragraph">
-                                    Каждый из нас понимает очевидную вещь:
-                                    перспективное планирование
-                                    предоставляет широкие возможности для
-                                    анализа существующих паттернов
-                                    поведения.
-                                </p>
                             </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-1.png" alt="avatar 1">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Константинов Михаил Павлович</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-2.png" alt="avatar 2">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Иван Иванов</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы упускаем, что
+                                активно развивающиеся страны третьего
+                                мира призваны к ответу.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-3.png" alt="avatar 3">
+                                <div class="slide__top__text">
+                                    <h3 class="-slide__top__text-name">Артем Корнилов</h3>
+                                    <span class="slide__top__text-city">Артем Корнилов</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-1.png" alt="avatar 1">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Константинов Михаил Павлович</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-2.png" alt="avatar 2">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Иван Иванов</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы упускаем, что
+                                активно развивающиеся страны третьего
+                                мира призваны к ответу.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-3.png" alt="avatar 3">
+                                <div class="slide__top__text">
+                                    <h3 class="-slide__top__text-name">Артем Корнилов</h3>
+                                    <span class="slide__top__text-city">Артем Корнилов</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-1.png" alt="avatar 1">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Константинов Михаил Павлович</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-2.png" alt="avatar 2">
+                                <div class="slide__top__text">
+                                    <h3 class="slide__top__text-name">Иван Иванов</h3>
+                                    <span class="slide__top__text-city">Санкт-Петербург</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения. В своём стремлении улучшить
+                                пользовательский опыт мы упускаем, что
+                                активно развивающиеся страны третьего
+                                мира призваны к ответу.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__top">
+                                <img src="./images/reviews/ava-3.png" alt="avatar 3">
+                                <div class="slide__top__text">
+                                    <h3 class="-slide__top__text-name">Артем Корнилов</h3>
+                                    <span class="slide__top__text-city">Артем Корнилов</span>
+                                </div>
+                            </div>
+                            <p class="slide-paragraph">
+                                Каждый из нас понимает очевидную вещь:
+                                перспективное планирование
+                                предоставляет широкие возможности для
+                                анализа существующих паттернов
+                                поведения.
+                            </p>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <button class="swiper-button-next">next</button>
+                    <button class="slick-next slick-btn" style="transform: scaleX(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M23.8387 2.27597C24.0816 2.0245 24.216 1.6877 24.2129 1.3381C24.2099 0.988509 24.0697 0.654093 23.8225 0.406882C23.5753 0.159671 23.2408 0.0194457 22.8912 0.0164078C22.5417 0.0133699 22.2049 0.147762 21.9534 0.39064L11.0574 11.2866C9.80757 12.5368 9.10547 14.2322 9.10547 16C9.10547 17.7677 9.80757 19.4631 11.0574 20.7133L21.9534 31.6093C22.2049 31.8522 22.5417 31.9866 22.8912 31.9835C23.2408 31.9805 23.5753 31.8403 23.8225 31.5931C24.0697 31.3459 24.2099 31.0114 24.2129 30.6618C24.216 30.3122 24.0816 29.9754 23.8387 29.724L12.9427 18.828C12.1928 18.0779 11.7716 17.0606 11.7716 16C11.7716 14.9393 12.1928 13.9221 12.9427 13.172L23.8387 2.27597Z" fill="#2A6CEA"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -423,8 +590,14 @@
         </div>
     </section>
 </main>
+<footer>
+    <div class="container">
+        <div class="copyright">© 2021 Лаборатория интернет</div>
+    </div>
+</footer>
 <div class="overlay"></div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>
