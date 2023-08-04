@@ -7,8 +7,10 @@ const btnSubmit = document.querySelector(".form__button");
 
 $(".responsive").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
+  autoplay: true,
+  autoplaySpeed: 5000,
   slidesToShow: 3,
   slidesToScroll: 3,
   prevArrow: $(".slick-prev"),

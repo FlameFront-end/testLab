@@ -8,12 +8,15 @@
   &__slider {
     position: relative;
   }
-  .carousel-container {
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.14vw;
   }
   .slide {
     width: 341px;
     min-height: 316px;
-    margin: 16px;
+
     padding: 22px 22px 0;
     border-radius: 8px;
     background-color: #FFFFFF;
@@ -40,6 +43,7 @@
       line-height: 24px;
     }
   }
+
   .slick-btn {
     position: absolute;
     top: 33%;
